@@ -9,10 +9,14 @@
     <input type="text" name="description" id="description" value="<%= car.description  %>"/>
 
     <br />
-    <label for="image">image:</label>
-    <input type="text" name="image" id="image" value="<%= car.image  %>"/>
 
-    <input type="hidden" name="_method" value="PUT">
+    
+    <label for="image">image:</label>
+    <input type="file" name="image" id="image" accept="image/*" value="<%= car.image  %>">
+
+  
+
+    
     <button type="submit">Update Car</button>
   </form>
 </body>
