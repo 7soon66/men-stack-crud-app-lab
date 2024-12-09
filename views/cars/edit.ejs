@@ -1,6 +1,6 @@
 <body>
   <h1>Edit <%= car.name %></h1>
-  <form action="/cars/<%= car._id %>?_method=POST" method="put">
+  <form action="/cars/<%= car._id %>?_method=PUT" method="post">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" value="<%= car.name  %>"/>
 
